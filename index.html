@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Abdulaziz Meshal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .show {
+            display: block !important;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #222;
+            color: white;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: inherit;
+        }
+        section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .dark-mode section {
+            background-color: #444;
+            color: white;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #ddd;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .dark-mode li {
+            background: #666;
+        }
+        .company-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .company-buttons button {
+            width: 60%;
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #555;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .company-buttons button:hover {
+            background-color: #666;
+        }
+        .company-buttons button::after {
+            content: '+';
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .tasks {
+            display: none;
+            transition: all 0.3s ease-in-out;
+        }
+        .progress-bar {
+            width: 100%;
+            max-width: 400px;
+            background: #ddd;
+            border-radius: 5px;
+            height: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            margin: auto;
+        }
+        .progress {
+            height: 100%;
+            background: #007BFF;
+            border-radius: 5px;
+        }
+        .progress-text {
+            position: absolute;
+            right: 10px;
+            top: -20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+        .skills-container {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .skill {
+            margin-bottom: 15px;
+        }
+        .skill span {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .dark-mode .skills-container {
+            background-color: #444;
+            color: white;
+        }
+        .dark-mode .progress {
+            background: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: start; gap: 15px;">
+            <img src="1554791287273.jpeg" alt="Profile Picture" style="width: 200px; height: 200px; border-radius: 50%;">
+            <div>
+                <h1>Abdulaziz Meshal</h1>
+                <p>Business Development Manager</p>
+                <p>Email: <a href="mailto:aziizwow@gmail.com">aziizwow@gmail.com</a> | 
+                    Phone: <a href="tel:+966542804018">0542804018</a> | 
+                    <a href="https://wa.me/966542804018" target="_blank" style="color: #007BFF; font-weight: bold;">WhatsApp</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/abdulaziz-meshal-a71266b3" target="_blank" style="color: #007BFF; font-weight: bold;">abdulaziz-meshal</a></p>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Highly organized, resourceful, and accomplished administrative professional with extensive experience for 11 years in directing business and healthcare operations, healthcare policy and processes. Highly adaptable, with the ability to assess organizational challenges and create solutions. Plan, organize, execute, and monitor the resources of the organization to ensure optimal health outcomes and effective quality and cost controls. In-depth knowledge of Ministry of Health By-Laws and International Hospital Accreditation Standards.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="company-buttons">
+            <button onclick="toggleCompany('avmlabs')">Business Development Manager - AVMLabs</button>
+            <div id="avmlabs" class="tasks">
+                <p>Feb 2020 - Present | Khobar, Saudi Arabia</p>
+                <ul>
+                    <li>Develop goals and objectives that tend to growth.</li>
+                    <li>Ensure that the company has the adequate and suitable resources to complete its activities.</li>
+                    <li>Maintain relationships with partners/vendors/suppliers.</li>
+                    <li>Gather, analyze and interpret external and internal data and write reports.</li>
+                    <li>Assess overall company performance against objectives.</li>
+                    <li>Represent the company in events, conferences.</li>
+                    <li>Ensure adherence to legal rules and guidelines.</li>
+                    <li>Supervise the work of employees and provide feedback and counsel to improve ef ciency and effectiveness.</li>
+                </ul>
+            </div>
+                    <button onclick="toggleCompany('nextcare')">Communication Manager - NEXtCARE</button>
+            <div id="nextcare" class="tasks">
+                <p>Jul 2018 - Feb 2020 | Khobar, Saudi Arabia</p>
+                <ul>
+                    <li>Oversee all internal and external communications for a company, ensuring its message is consistent and engaging.</li>
+                    <li> Develop and implement effective communication strategies that build customer loyalty programs, brand awareness, and customer satisfaction</li>
+                    <li> Responsible for the smooth communication with stakeholders. And the driving the strategic plans with General Manager.</li>
+                </ul>
+            </div>
+            
+            <button onclick="toggleCompany('alhassan')">Outpatient Manager & Administrator - Al Hassan Al Namy Hospital</button>
+            <div id="alhassan" class="tasks">
+                <p>Jul 2016 - Jul 2018 | Dammam, Saudi Arabia</p>
+                <ul>
+                    <li> Responsible for the smooth operation of the OPD Medical Staff, Nursing and Support staff. Liaise with the Insurance Of ce to ensure nancial accuracy.</li>
+                    <li>Advocate to a wide variety of staff and customers.</li>
+                    <li> Analyzes, forecasts trend, makes recommendations to Seniior Administration</li>
+                    <li>Evaluates Hospital Informatics Systems, Work ow and Requirements</li>
+                    <li> Ensures all Clinics have suf cient support, resources and supplies, to function as per MOH and International Regulations for employee and patient safety.</li>
+                </ul>
+            </div>
+            
+            <button onclick="toggleCompany('saad')">Administration Office Manager - OPD - Saad Specialist Hospital</button>
+            <div id="saad" class="tasks">
+                <p>Jan 2013 - Jul 2016 | Khobar, Saudi Arabia</p>
+                <ul>
+                    <li>Customer Services advocate.</li>
+                    <li>Produced a variety of memos and letters for Senior Administrator.</li>
+                    <li> Human Resources Management, Staff Hiring and Development.</li>
+                    <li> Policy maker and compliance, ensured staff productivity under supervision, Payroll, Supplies, Statistical Analysis and management.</li>
+                    <li>Clinic Event Planning with Marketing Department.</li>
+                </ul>
+            </div>
+            
+            <button onclick="toggleCompany('assistant')">Assistant Manager - Support Office - OPD - Saad Specialist Hospital</button>
+            <div id="assistant" class="tasks">
+                <p>Jan 2010 - Dec 2013 | Khobar, Saudi Arabia</p>
+                <ul>
+                    <li> Liaises with other managers across the organization to ensure that outpatient strategies and activities are integrated with other parts of the
+                        organization and are aligned with the hospital’s overall objectives.</li>
+                    <li> Participates in the planning, creation, organization, and introduction of new OPD Clinics</li>
+                    <li>Participates in developing and implementing a hospital-wide quality improvement and patient safety program.</li>
+                </ul>
+            </div>
+            
+            <button onclick="toggleCompany('frontline')">OPD Clinic Frontline - Saad Specialist Hospital</button>
+            <div id="frontline" class="tasks">
+                <p>Oct 2008 - Dec 2010 | Khobar, Saudi Arabia</p>
+                <ul>
+                    <li>Scheduled appointments for patients.</li>
+                    <li>Maintaining records and accounts of patients</li>
+                    <li>Assisting patients in lling medical forms</li>
+                    <li>Processing different payments for patients</li>
+                    <li>Transcribing physician notes</li>
+                    <li>Answering multi-line phone and transferring calls to direct and departments</li>
+                    <li>Maintaining the con dentiality of patient and doctor's information</li>
+                    <li>Preparing customer bills and specimen labels for the next day's patient</li>
+                    <li>Keeping track of of ce supplies, inventories and placing orders as necessary</li>
+                    <li>Ensuring maintenance of the reception area</li>
+                    <li>Updating patient insurance information</li>
+                </ul>
+            </div>
+                    </section>
+    
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Bachelor - Business Administration</strong> - King Faisal University (2011 - 2015), Eastern Province, Saudi Arabia</li>
+            <li><strong>MBA Program</strong> - University of Roehampton (2017 - 2018), Online, UK</li>
+            <li><strong>IT Diploma & English Language</strong> - Telford College (University of Cambridge) (2007 - 2008), Telford City, UK</li>
+        </ul>
+    </section>
+
+    <section id="personal-skills" class="skills-container">
+        <h2>Personal Skills</h2>
+        <div class="skill">
+            <span>Leadership</span>
+            <div class="progress-wrapper">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+                <span class="progress-text">85%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Problem-Solving</span>
+            <div class="progress-wrapper">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+                <span class="progress-text">90%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Communication</span>
+            <div class="progress-wrapper">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+                <span class="progress-text">80%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Teamwork</span>
+            <div class="progress-wrapper">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 88%"></div>
+                </div>
+                <span class="progress-text">88%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Time Management</span>
+            <div class="progress-wrapper">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+                <span class="progress-text">75%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+            <li>English - ★★★★-</li>
+        </ul>
+    </section>
+
+    <section id="courses">
+        <h2>Courses</h2>
+        <ul>
+            <li>Lean Management - Sustainability Phase - Ministry Of Health (Nov 2019)</li>
+            <li>Introduction to 6 Sigma - Ministry Of Health (Nov 2019)</li>
+            <li>Building Positive Patient Safety Culture - Ministry Of Health (Nov 2019)</li>
+            <li>Data Protection & Privacy - Allianz Group (Feb 2019)</li>
+        </ul>
+    </section>
+
+    <section id="expertise">
+        <h2>Areas of Expertise</h2>
+        <ul>
+            <li>Communication and Relationship Management</li>
+            <li>Business Skills and Knowledge</li>
+            <li>Healthcare Systems and Organizations</li>
+            <li>Customer Care</li>
+            <li>Strategic Planning</li>
+            <li>Excellent Leadership Skills and Behavior</li>
+            <li>Regulatory Compliance</li>
+            <li>Leadership / Management</li>
+        </ul>
+    </section>
+
+    <section id="references">
+        <h2>References</h2>
+        <p>Available upon request</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Travel</li>
+            <li>Basketball</li>
+            <li>Reading</li>
+        </ul>
+    </section>
+
+    <button onclick="toggleDarkMode()" style="display: block; margin: 20px auto;">Toggle Dark Mode</button>
+    <button onclick="downloadCV()" style="display: block; margin: 20px auto;">Download CV (PDF)</button>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            localStorage.setItem("darkMode", document.body.classList.contains("dark-mode") ? "enabled" : "disabled");
+        }
+        window.onload = function() {
+            if (localStorage.getItem("darkMode") === "enabled") {
+                document.body.classList.add("dark-mode");
+            }
+        }
+
+        function toggleCompany(companyId) {
+            let company = document.getElementById(companyId);
+            company.classList.toggle("show");
+        }
+
+        function downloadCV() {
+            window.location.href = "MyResume - Abdulaziz Meshal.pdf"; // Ensure this file exists in the same directory
+        }
+    </script>
+</body>
+</html>
